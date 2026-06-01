@@ -2,6 +2,10 @@
 
 This repository documents the setup and configuration for aggregating system metrics from multiple client VPS instances into a single, centralized **Grafana Cloud (Free Tier)** dashboard using **Grafana Alloy** and **Prometheus**.
 
+<p align="center">
+  <img src="overview-image.png" alt="Infrastructure Overview" width="100%">
+</p>
+
 ---
 
 ## 🏗️ Architecture Overview
@@ -19,10 +23,6 @@ Instead of running a heavy, resource-consuming Prometheus server on each client 
 2. A **Relabeling Pipeline** injects a custom, human-readable server name onto the collected metrics.
 
 3. Alloy securely streams metrics via **Prometheus Remote Write** to the hosted Grafana Cloud instance.
-
-### 📸 Finished Dashboard
-
-![Grafana Dashboard Screenshot](grafana-card.png)
 
 > [!NOTE]
 > For setting up **Caddy** as a reverse proxy in front of Grafana Cloud with Alloy, refer to [caddy-log-setup.md](caddy-log-setup.md).
@@ -49,6 +49,12 @@ Instead of running a heavy, resource-consuming Prometheus server on each client 
 │    Dashboards           │
 └─────────────────────────┘
 ```
+
+---
+
+## 📸 Finished Dashboard
+
+![Grafana Dashboard Screenshot](grafana-card.png)
 
 ---
 
