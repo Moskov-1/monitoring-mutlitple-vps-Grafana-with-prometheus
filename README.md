@@ -20,6 +20,13 @@ Instead of running a heavy, resource-consuming Prometheus server on each client 
 
 3. Alloy securely streams metrics via **Prometheus Remote Write** to the hosted Grafana Cloud instance.
 
+### 📸 Finished Dashboard
+
+![Grafana Dashboard Screenshot](grafana-card.png)
+
+> [!NOTE]
+> For setting up **Caddy** as a reverse proxy in front of Grafana Cloud with Alloy, refer to [caddy-log-setup.md](caddy-log-setup.md).
+
 ```text
 ┌─────────────────────────┐
 │      Client VPS         │
